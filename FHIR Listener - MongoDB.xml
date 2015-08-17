@@ -1,0 +1,1376 @@
+<channel version="3.2.2">
+  <id>9497581f-2728-44e3-870b-8c2f169dc7a2</id>
+  <nextMetaDataId>8</nextMetaDataId>
+  <name>FHIR Listener - MongoDB</name>
+  <description></description>
+  <enabled>true</enabled>
+  <lastModified>
+    <time>1439733647899</time>
+    <timezone>Asia/Calcutta</timezone>
+  </lastModified>
+  <revision>66</revision>
+  <sourceConnector version="3.2.2">
+    <metaDataId>0</metaDataId>
+    <name>sourceConnector</name>
+    <properties class="com.mirth.connect.connectors.fhir.shared.FhirReceiverProperties" version="3.2.2">
+      <pluginProperties/>
+      <listenerConnectorProperties version="3.2.2">
+        <host>0.0.0.0</host>
+        <port>9003</port>
+      </listenerConnectorProperties>
+      <sourceConnectorProperties version="3.2.2">
+        <responseVariable>response</responseVariable>
+        <respondAfterProcessing>true</respondAfterProcessing>
+        <processBatch>false</processBatch>
+        <firstResponse>false</firstResponse>
+        <resourceIds class="singleton-set">
+          <string>Default Resource</string>
+        </resourceIds>
+      </sourceConnectorProperties>
+      <contextPath></contextPath>
+      <timeout>0</timeout>
+      <identifier>ident</identifier>
+      <version>12345</version>
+      <serverName>server name</serverName>
+      <publisher>Mirth</publisher>
+      <acceptUnknown>true</acceptUnknown>
+      <supportsXML>true</supportsXML>
+      <supportsJSON>true</supportsJSON>
+      <resourceProperties>
+        <disabledInteractions>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DocumentManifest</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ConceptMap</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Organization</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Media</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Coverage</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>FamilyHistory</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>NutritionOrder</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Contract</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>QuestionnaireAnswers</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MedicationStatement</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Procedure</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>OrderResponse</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Namespace</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Order</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Profile</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Query</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>OperationOutcome</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Practitioner</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Condition</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ReferralRequest</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Medication</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DiagnosticReport</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Questionnaire</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ImmunizationRecommendation</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>List</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MedicationDispense</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DiagnosticOrder</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Availability</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Contraindication</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>OralHealthClaim</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Provenance</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MedicationAdministration</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DocumentReference</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Encounter</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Location</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DeviceObservationReport</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Other</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>DataElement</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Composition</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>ClaimResponse</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MessageHeader</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Device</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Observation</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>MedicationPrescription</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>UPDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>DELETE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>READ</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+          <entry>
+            <com.mirth.connect.connectors.fhir.shared.FhirResource>Conformance</com.mirth.connect.connectors.fhir.shared.FhirResource>
+            <set>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VALIDATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>HISTORY_TYPE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>VREAD</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>SEARCH</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+              <com.mirth.connect.connectors.fhir.shared.FhirInteraction>CREATE</com.mirth.connect.connectors.fhir.shared.FhirInteraction>
+            </set>
+          </entry>
+        </disabledInteractions>
+      </resourceProperties>
+    </properties>
+    <transformer version="3.2.2">
+      <steps>
+        <step>
+          <sequenceNumber>0</sequenceNumber>
+          <name>Filter destinations by FHIR interaction</name>
+          <script>destinationSet.removeAllExcept([sourceMap.get(&apos;fhirInteraction&apos;)]);</script>
+          <type>JavaScript</type>
+          <data>
+            <entry>
+              <string>Script</string>
+              <string>destinationSet.removeAllExcept([sourceMap.get(&apos;fhirInteraction&apos;)]);</string>
+            </entry>
+          </data>
+        </step>
+        <step>
+          <sequenceNumber>1</sequenceNumber>
+          <name>contentType</name>
+          <script>var mapping;
+
+try {
+	mapping = sourceMap.get(&apos;headers&apos;).getHeader(&apos;content-type&apos;); 
+} catch (e) {
+	logger.error(e);
+	mapping = &apos;&apos;;
+}
+
+channelMap.put(&apos;contentType&apos;, validate( mapping , &apos;&apos;, new Array()));</script>
+          <type>Mapper</type>
+          <data>
+            <entry>
+              <string>Variable</string>
+              <string>contentType</string>
+            </entry>
+            <entry>
+              <string>Mapping</string>
+              <string>sourceMap.get(&apos;headers&apos;).getHeader(&apos;content-type&apos;)</string>
+            </entry>
+            <entry>
+              <string>DefaultValue</string>
+              <string></string>
+            </entry>
+            <entry>
+              <string>RegularExpressions</string>
+              <list/>
+            </entry>
+            <entry>
+              <string>isGlobal</string>
+              <string>channel</string>
+            </entry>
+          </data>
+        </step>
+        <step>
+          <sequenceNumber>2</sequenceNumber>
+          <name>accept</name>
+          <script>var mapping;
+
+try {
+	mapping = sourceMap.get(&apos;headers&apos;).getHeader(&apos;accept&apos;); 
+} catch (e) {
+	logger.error(e);
+	mapping = &apos;&apos;;
+}
+
+channelMap.put(&apos;accept&apos;, validate( mapping , &apos;&apos;, new Array()));</script>
+          <type>Mapper</type>
+          <data>
+            <entry>
+              <string>Variable</string>
+              <string>accept</string>
+            </entry>
+            <entry>
+              <string>Mapping</string>
+              <string>sourceMap.get(&apos;headers&apos;).getHeader(&apos;accept&apos;)</string>
+            </entry>
+            <entry>
+              <string>DefaultValue</string>
+              <string></string>
+            </entry>
+            <entry>
+              <string>RegularExpressions</string>
+              <list/>
+            </entry>
+            <entry>
+              <string>isGlobal</string>
+              <string>channel</string>
+            </entry>
+          </data>
+        </step>
+      </steps>
+      <inboundTemplate encoding="base64"></inboundTemplate>
+      <outboundTemplate encoding="base64"></outboundTemplate>
+      <inboundDataType>XML</inboundDataType>
+      <outboundDataType>XML</outboundDataType>
+      <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+        <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+          <stripNamespaces>false</stripNamespaces>
+        </serializationProperties>
+        <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+          <splitType>Element_Name</splitType>
+          <elementName></elementName>
+          <level>1</level>
+          <query></query>
+          <batchScript></batchScript>
+        </batchProperties>
+      </inboundProperties>
+      <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+        <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+          <stripNamespaces>false</stripNamespaces>
+        </serializationProperties>
+        <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+          <splitType>Element_Name</splitType>
+          <elementName></elementName>
+          <level>1</level>
+          <query></query>
+          <batchScript></batchScript>
+        </batchProperties>
+      </outboundProperties>
+    </transformer>
+    <filter version="3.2.2">
+      <rules/>
+    </filter>
+    <transportName>FHIR Listener</transportName>
+    <mode>SOURCE</mode>
+    <enabled>true</enabled>
+    <waitForPrevious>true</waitForPrevious>
+  </sourceConnector>
+  <destinationConnectors>
+    <connector version="3.2.2">
+      <metaDataId>1</metaDataId>
+      <name>create</name>
+      <properties class="com.mirth.connect.connectors.js.JavaScriptDispatcherProperties" version="3.2.2">
+        <pluginProperties/>
+        <destinationConnectorProperties version="3.2.2">
+          <queueEnabled>false</queueEnabled>
+          <sendFirst>false</sendFirst>
+          <retryIntervalMillis>10000</retryIntervalMillis>
+          <regenerateTemplate>false</regenerateTemplate>
+          <retryCount>0</retryCount>
+          <rotate>false</rotate>
+          <includeFilterTransformer>false</includeFilterTransformer>
+          <threadCount>1</threadCount>
+          <threadAssignmentVariable></threadAssignmentVariable>
+          <validateResponse>false</validateResponse>
+          <resourceIds class="singleton-set">
+            <string>Default Resource</string>
+          </resourceIds>
+        </destinationConnectorProperties>
+        <script>try
+{
+	var id = UUIDGenerator.getUUID();
+	var versionId = &apos;1&apos;;
+	
+	var data = AttachmentUtil.reAttachMessage(connectorMessage);
+	
+	if($(&apos;contentType&apos;) == &apos;application/fhir+xml&apos; || $(&apos;contentType&apos;) == &apos;application/xml+fhir;charset=utf-8&apos;)
+	{
+		data = fhirConvertResource(data, &apos;xml&apos;, &apos;json&apos;);
+	}
+
+	var docData = com.mongodb.DBObject ( com.mongodb.util.JSON.parse( data ));
+		
+	$c(&apos;resourceToStore&apos;, data);
+	
+	var db = get_mongo_conn(); // code template
+
+	coll = db.getCollection($(&apos;fhirType&apos;));
+	var doc = com.mongodb.BasicDBObject ();
+	doc.put(&apos;id&apos;, id);
+	doc.put(&apos;versionId&apos;, versionId);
+	doc.put(&apos;deleted&apos;, &apos;0&apos;);
+	doc.put(&apos;data&apos;, docData);
+	
+	coll.insert(doc);
+	//var id = org.bson.types.ObjectId ( doc.get( &apos;_id&apos; ) );
+	responseMap.put(&apos;response&apos;, FhirResponseFactory.getCreateResponse(id, versionId, 201));
+}
+catch(e)
+{
+	responseMap.put(&apos;response&apos;, FhirResponseFactory.getCreateResponse(id, versionId, 500));	
+	throw e;
+}
+</script>
+      </properties>
+      <transformer version="3.2.2">
+        <steps/>
+        <inboundTemplate encoding="base64"></inboundTemplate>
+        <outboundTemplate encoding="base64"></outboundTemplate>
+        <inboundDataType>XML</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </transformer>
+      <responseTransformer version="3.2.2">
+        <steps/>
+        <inboundTemplate encoding="base64"></inboundTemplate>
+        <outboundTemplate encoding="base64"></outboundTemplate>
+        <inboundDataType>RAW</inboundDataType>
+        <outboundDataType>RAW</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.raw.RawDataTypeProperties" version="3.2.2">
+          <batchProperties class="com.mirth.connect.plugins.datatypes.raw.RawBatchProperties" version="3.2.2">
+            <splitType>JavaScript</splitType>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.raw.RawDataTypeProperties" version="3.2.2">
+          <batchProperties class="com.mirth.connect.plugins.datatypes.raw.RawBatchProperties" version="3.2.2">
+            <splitType>JavaScript</splitType>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </responseTransformer>
+      <filter version="3.2.2">
+        <rules/>
+      </filter>
+      <transportName>JavaScript Writer</transportName>
+      <mode>DESTINATION</mode>
+      <enabled>true</enabled>
+      <waitForPrevious>true</waitForPrevious>
+    </connector>
+    <connector version="3.2.2">
+      <metaDataId>2</metaDataId>
+      <name>update</name>
+      <properties class="com.mirth.connect.connectors.js.JavaScriptDispatcherProperties" version="3.2.2">
+        <pluginProperties/>
+        <destinationConnectorProperties version="3.2.2">
+          <queueEnabled>false</queueEnabled>
+          <sendFirst>false</sendFirst>
+          <retryIntervalMillis>10000</retryIntervalMillis>
+          <regenerateTemplate>false</regenerateTemplate>
+          <retryCount>0</retryCount>
+          <rotate>false</rotate>
+          <includeFilterTransformer>false</includeFilterTransformer>
+          <threadCount>1</threadCount>
+          <threadAssignmentVariable></threadAssignmentVariable>
+          <validateResponse>false</validateResponse>
+          <resourceIds class="linked-hash-set">
+            <string>Default Resource</string>
+          </resourceIds>
+        </destinationConnectorProperties>
+        <script>	var versionId = $(&apos;fhirVid&apos;);
+	if(versionId &lt;= &apos;&apos;)
+		versionId = &apos;1&apos;;
+		
+	var type = $(&apos;fhirType&apos;);
+	var id = $(&apos;fhirId&apos;);
+	
+	var data = AttachmentUtil.reAttachMessage(connectorMessage);
+	
+	if($(&apos;contentType&apos;) == &apos;application/fhir+xml&apos;)
+	{
+		data = fhirConvertResource(data, &apos;xml&apos;, &apos;json&apos;);
+	}
+
+	var docData = com.mongodb.DBObject ( com.mongodb.util.JSON.parse( data ));
+		
+	$c(&apos;resourceToStore&apos;, data);
+	
+	var db = get_mongo_conn(); // code template
+
+	coll = db.getCollection($(&apos;fhirType&apos;));
+	
+	var newDocument = new com.mongodb.BasicDBObject();
+	newDocument.append(&quot;$set&quot;, new com.mongodb.BasicDBObject().append(&quot;data&quot;, docData));
+			
+	var searchQuery = new com.mongodb.BasicDBObject().append(&quot;id&quot;, id).append(&quot;versionId&quot;, versionId);
+
+	var writeRes = coll.update(searchQuery, newDocument,true,false);
+	var result = writeRes.getN();
+	var isUpdate = writeRes.isUpdateOfExisting();
+		
+	var responseCode;
+	
+	if (result == 1 &amp;&amp; !isUpdate) {
+		responseCode = 201;
+	} else if (result == 1 &amp;&amp; isUpdate) {
+		responseCode = 200;
+	}
+	else if(result == 0)
+		responseCode = 404;
+	else
+		responseCode = 400;
+
+	responseMap.put(&apos;response&apos;, FhirResponseFactory.getUpdateResponse(versionId, responseCode));
+</script>
+      </properties>
+      <transformer version="3.2.2">
+        <steps/>
+        <inboundDataType>XML</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </transformer>
+      <responseTransformer version="3.2.2">
+        <steps/>
+        <inboundTemplate encoding="base64"></inboundTemplate>
+        <outboundTemplate encoding="base64"></outboundTemplate>
+        <inboundDataType>XML</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </responseTransformer>
+      <filter version="3.2.2">
+        <rules/>
+      </filter>
+      <transportName>JavaScript Writer</transportName>
+      <mode>DESTINATION</mode>
+      <enabled>true</enabled>
+      <waitForPrevious>true</waitForPrevious>
+    </connector>
+    <connector version="3.2.2">
+      <metaDataId>3</metaDataId>
+      <name>delete</name>
+      <properties class="com.mirth.connect.connectors.js.JavaScriptDispatcherProperties" version="3.2.2">
+        <pluginProperties/>
+        <destinationConnectorProperties version="3.2.2">
+          <queueEnabled>false</queueEnabled>
+          <sendFirst>false</sendFirst>
+          <retryIntervalMillis>10000</retryIntervalMillis>
+          <regenerateTemplate>false</regenerateTemplate>
+          <retryCount>0</retryCount>
+          <rotate>false</rotate>
+          <includeFilterTransformer>false</includeFilterTransformer>
+          <threadCount>1</threadCount>
+          <threadAssignmentVariable></threadAssignmentVariable>
+          <validateResponse>false</validateResponse>
+          <resourceIds class="linked-hash-set">
+            <string>Default Resource</string>
+          </resourceIds>
+        </destinationConnectorProperties>
+        <script>	var versionId = $(&apos;vid&apos;);
+	if(versionId &lt;= &apos;&apos;)
+		versionId = &apos;1&apos;;
+		
+	var type = $(&apos;fhirType&apos;);
+	var id = $(&apos;fhirId&apos;);
+	
+	var db = get_mongo_conn(); // code template
+
+	coll = db.getCollection($(&apos;fhirType&apos;));
+	
+	var newDocument = new com.mongodb.BasicDBObject();
+	newDocument.append(&quot;$set&quot;, new com.mongodb.BasicDBObject().append(&quot;deleted&quot;, &apos;1&apos;));
+			
+	var searchQuery = new com.mongodb.BasicDBObject().append(&quot;id&quot;, id).append(&quot;versionId&quot;, versionId);
+
+	var writeRes = coll.update(searchQuery, newDocument);
+	var result = writeRes.getN();
+	var isUpdate = writeRes.isUpdateOfExisting();
+		
+	var responseCode;
+	
+	if (result == 1 &amp;&amp; isUpdate) {
+		responseCode = 204;
+	}
+	else if(result == 0)
+		responseCode = 404;
+	else
+		responseCode = 400;
+
+	responseMap.put(&apos;response&apos;, FhirResponseFactory.getResponse(null, responseCode));
+</script>
+      </properties>
+      <transformer version="3.2.2">
+        <steps/>
+        <inboundTemplate encoding="base64"></inboundTemplate>
+        <outboundTemplate encoding="base64"></outboundTemplate>
+        <inboundDataType>XML</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </transformer>
+      <responseTransformer version="3.2.2">
+        <steps/>
+        <inboundTemplate encoding="base64"></inboundTemplate>
+        <outboundTemplate encoding="base64"></outboundTemplate>
+        <inboundDataType>RAW</inboundDataType>
+        <outboundDataType>RAW</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.raw.RawDataTypeProperties" version="3.2.2">
+          <batchProperties class="com.mirth.connect.plugins.datatypes.raw.RawBatchProperties" version="3.2.2">
+            <splitType>JavaScript</splitType>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.raw.RawDataTypeProperties" version="3.2.2">
+          <batchProperties class="com.mirth.connect.plugins.datatypes.raw.RawBatchProperties" version="3.2.2">
+            <splitType>JavaScript</splitType>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </responseTransformer>
+      <filter version="3.2.2">
+        <rules/>
+      </filter>
+      <transportName>JavaScript Writer</transportName>
+      <mode>DESTINATION</mode>
+      <enabled>true</enabled>
+      <waitForPrevious>true</waitForPrevious>
+    </connector>
+    <connector version="3.2.2">
+      <metaDataId>4</metaDataId>
+      <name>read</name>
+      <properties class="com.mirth.connect.connectors.js.JavaScriptDispatcherProperties" version="3.2.2">
+        <pluginProperties/>
+        <destinationConnectorProperties version="3.2.2">
+          <queueEnabled>false</queueEnabled>
+          <sendFirst>false</sendFirst>
+          <retryIntervalMillis>10000</retryIntervalMillis>
+          <regenerateTemplate>false</regenerateTemplate>
+          <retryCount>0</retryCount>
+          <rotate>false</rotate>
+          <includeFilterTransformer>false</includeFilterTransformer>
+          <threadCount>1</threadCount>
+          <threadAssignmentVariable></threadAssignmentVariable>
+          <validateResponse>false</validateResponse>
+          <resourceIds class="linked-hash-set">
+            <string>Default Resource</string>
+          </resourceIds>
+        </destinationConnectorProperties>
+        <script>
+	var db = get_mongo_conn(); // code template
+
+	coll = db.getCollection($(&apos;fhirType&apos;));
+	
+	var query = new com.mongodb.BasicDBObject().append(&quot;id&quot;, $(&apos;fhirId&apos;));
+	var fields = new com.mongodb.BasicDBObject().append(&quot;data&quot;, 1).append(&quot;versionId&quot;, 1).append(&quot;_id&quot;, 0);
+	var cursor = coll.find(query, fields);
+
+	var response;
+	
+	if(cursor.hasNext()) {
+       	var obj = cursor.next();
+       	var versionId = obj.get(&apos;versionId&apos;).toString();
+       	var data = obj.get(&apos;data&apos;);
+       	
+       	var resJson = com.mongodb.util.JSON.serialize(data);
+		$c(&apos;resJson&apos;, resJson);
+
+		response = FhirResponseFactory.getReadResponse(data, versionId, null, 200, &apos;application/fhir+json&apos;);
+    	}
+   	else {
+		response = FhirResponseFactory.getReadResponse(null, null, 410, null);
+	}
+
+	responseMap.put(&apos;response&apos;, response);
+
+</script>
+      </properties>
+      <transformer version="3.2.2">
+        <steps/>
+        <inboundDataType>XML</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </transformer>
+      <responseTransformer version="3.2.2">
+        <steps/>
+        <inboundDataType>XML</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </responseTransformer>
+      <filter version="3.2.2">
+        <rules/>
+      </filter>
+      <transportName>JavaScript Writer</transportName>
+      <mode>DESTINATION</mode>
+      <enabled>true</enabled>
+      <waitForPrevious>true</waitForPrevious>
+    </connector>
+    <connector version="3.2.2">
+      <metaDataId>5</metaDataId>
+      <name>vread</name>
+      <properties class="com.mirth.connect.connectors.js.JavaScriptDispatcherProperties" version="3.2.2">
+        <pluginProperties/>
+        <destinationConnectorProperties version="3.2.2">
+          <queueEnabled>false</queueEnabled>
+          <sendFirst>false</sendFirst>
+          <retryIntervalMillis>10000</retryIntervalMillis>
+          <regenerateTemplate>false</regenerateTemplate>
+          <retryCount>0</retryCount>
+          <rotate>false</rotate>
+          <includeFilterTransformer>false</includeFilterTransformer>
+          <threadCount>1</threadCount>
+          <threadAssignmentVariable></threadAssignmentVariable>
+          <validateResponse>false</validateResponse>
+          <resourceIds class="linked-hash-set">
+            <string>Default Resource</string>
+          </resourceIds>
+        </destinationConnectorProperties>
+        <script>
+	var db = get_mongo_conn(); // code template
+
+	coll = db.getCollection($(&apos;fhirType&apos;));
+	
+	var query = new com.mongodb.BasicDBObject().append(&quot;id&quot;, $(&apos;fhirId&apos;)).append(&quot;versionId&quot;, $(&apos;fhirVid&apos;));
+	var fields = new com.mongodb.BasicDBObject().append(&quot;data&quot;, 1).append(&quot;_id&quot;, 0);
+	var cursor = coll.find(query, fields);
+
+	var response;
+	
+	if(cursor.hasNext()) {
+       	var obj = cursor.next();
+       	var data = obj.get(&apos;data&apos;);
+       	
+       	var resJson = com.mongodb.util.JSON.serialize(data);
+		$c(&apos;resJson&apos;, resJson);
+
+		response = FhirResponseFactory.getVreadResponse(data, 200, &apos;application/fhir+json&apos;);
+    	}
+   	else {
+		response = FhirResponseFactory.getVreadResponse(&apos;&apos;, 410, null);
+	}
+
+	responseMap.put(&apos;response&apos;, response);
+</script>
+      </properties>
+      <transformer version="3.2.2">
+        <steps/>
+        <inboundDataType>XML</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </transformer>
+      <responseTransformer version="3.2.2">
+        <steps/>
+        <inboundDataType>XML</inboundDataType>
+        <outboundDataType>XML</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.2.2">
+          <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.2.2">
+            <stripNamespaces>false</stripNamespaces>
+          </serializationProperties>
+          <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.2.2">
+            <splitType>Element_Name</splitType>
+            <elementName></elementName>
+            <level>1</level>
+            <query></query>
+            <batchScript></batchScript>
+          </batchProperties>
+        </outboundProperties>
+      </responseTransformer>
+      <filter version="3.2.2">
+        <rules/>
+      </filter>
+      <transportName>JavaScript Writer</transportName>
+      <mode>DESTINATION</mode>
+      <enabled>true</enabled>
+      <waitForPrevious>true</waitForPrevious>
+    </connector>
+  </destinationConnectors>
+  <preprocessingScript>// Modify the message variable below to pre process data
+return message;</preprocessingScript>
+  <postprocessingScript>// This script executes once after a message has been processed
+// Responses returned from here will be stored as &quot;Postprocessor&quot; in the response map
+return;</postprocessingScript>
+  <deployScript>// This script executes once when the channel is deployed
+// You only have access to the globalMap and globalChannelMap here to persist data
+return;</deployScript>
+  <undeployScript>// This script executes once when the channel is undeployed
+// You only have access to the globalMap and globalChannelMap here to persist data
+return;</undeployScript>
+  <properties version="3.2.2">
+    <clearGlobalChannelMap>true</clearGlobalChannelMap>
+    <messageStorageMode>DEVELOPMENT</messageStorageMode>
+    <encryptData>false</encryptData>
+    <removeContentOnCompletion>false</removeContentOnCompletion>
+    <removeAttachmentsOnCompletion>false</removeAttachmentsOnCompletion>
+    <initialState>STARTED</initialState>
+    <storeAttachments>true</storeAttachments>
+    <tags class="linked-hash-set"/>
+    <metaDataColumns>
+      <metaDataColumn>
+        <name>FHIR_TYPE</name>
+        <type>STRING</type>
+        <mappingName>fhirType</mappingName>
+      </metaDataColumn>
+      <metaDataColumn>
+        <name>FHIR_INTERACTION</name>
+        <type>STRING</type>
+        <mappingName>fhirInteraction</mappingName>
+      </metaDataColumn>
+      <metaDataColumn>
+        <name>FHIR_ID</name>
+        <type>STRING</type>
+        <mappingName>fhirId</mappingName>
+      </metaDataColumn>
+      <metaDataColumn>
+        <name>FHIR_VID</name>
+        <type>STRING</type>
+        <mappingName>fhirVid</mappingName>
+      </metaDataColumn>
+    </metaDataColumns>
+    <attachmentProperties>
+      <className>com.mirth.connect.server.attachments.JavaScriptAttachmentHandler</className>
+      <type>JavaScript</type>
+      <properties>
+        <entry>
+          <string>javascript.script</string>
+          <string>// Modify the message variable below to create attachments
+
+var fhirType = $(&apos;fhirType&apos;);
+var fhirInteraction = $(&apos;fhirInteraction&apos;);
+
+// If we&apos;re creating or updating a Binary resource, add an attachment for it
+if (fhirType == &apos;Binary&apos; &amp;&amp; (fhirInteraction == &apos;create&apos; || fhirInteraction == &apos;update&apos;)) {
+	return addAttachment(message, $(&apos;headers&apos;).getHeader(&apos;Content-Type&apos;)).getAttachmentId();
+}
+
+return message;</string>
+        </entry>
+      </properties>
+    </attachmentProperties>
+    <archiveEnabled>true</archiveEnabled>
+    <resourceIds class="linked-hash-set">
+      <string>Default Resource</string>
+    </resourceIds>
+  </properties>
+</channel>
